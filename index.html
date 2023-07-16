@@ -1,0 +1,467 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanni- Portfolio website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: rgb(1, 1, 24);
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: large;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        background-color: rgb(23, 42, 104);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+        font-size: larger;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(169, 48, 230);
+        font-size: 1.02;
+      }
+
+      main hr {
+        border: oldlace;
+        height: 1.2px;
+        background: #8852b9;
+        margin: 48px 98px;
+      }
+
+      .left {
+        font-size: 1.75rem;
+      }
+
+      .left {
+        animation: left 10s 1;
+      }
+      @keyframes left {
+        0% {
+          color: rgb(240, 240, 244);
+          margin-left: -40px;
+        }
+        30% {
+          letter-spacing: 20px;
+          margin-left: -40px;
+        }
+        85% {
+          letter-spacing: 7px;
+          margin-left: 40px;
+        }
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 30px 0;
+      }
+
+      .firstSection > div {
+        width: 35%;
+        align-items: center;
+      }
+
+      .leftSection {
+        font-size: 2.6rem;
+        margin: 100px 0;
+      }
+
+      .leftSection .buttons {
+        padding: 27px 1px;
+      }
+
+      .leftSection .btn {
+        margin: 0;
+        padding: 12px;
+        justify-content: center;
+        background: none;
+        color: white;
+        border: 2px solid white;
+        border-radius: 4px;
+        font-size: 18px;
+        transition: color 0.5s linear;
+        position: relative;
+      }
+
+      .leftSection .btn a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: #f8f4fa;
+        transition: 0.2s;
+
+      }
+
+      .leftSection .btn :hover {
+        text-decoration: none;
+        color: #ab51db;
+        letter-spacing: 0.2em;
+        touch-action: none;
+      }
+
+      .rightSection img {
+        width: 89%;
+        height: 80%;
+        margin: 45px 0;
+        transition: all 1s;
+        animation: img 5s linear infinite;
+      }
+      @keyframes img {
+        0% {
+          transform: translateX(0%);
+        }
+        15% {
+          transform: translateY(-2%)  rotate(-1deg);
+        }
+        30% {
+          transform: translateY(2%) ;
+        }
+        45% {
+          transform: translateX(-2%) ;
+        }
+        60% {
+          transform: translateX(2%);
+        }
+        75% {
+          transform: translateY(-2%) rotate(-1deg);
+        }
+        100% {
+          transform: translateY(0%);
+        }
+      }
+
+      .purple {
+        color: rgb(171, 81, 219);
+      }
+
+      .text-gray {
+        color: rgb(148, 135, 151);
+      }
+
+      #element {
+        color: rgb(171, 81, 219);
+      }
+
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 110vh;
+      }
+
+      .secondSection h1 {
+        font-size: 2.2rem;
+        animation: h1 5s 7;
+      }
+      @keyframes h1 {
+        0% {
+          color: rgb(1, 1, 24);
+          margin-left: -40px;
+        }
+        30% {
+          letter-spacing: 20px;
+          margin-left: -40px;
+        }
+        85% {
+          letter-spacing: 7px;
+          margin-left: 40px;
+        }
+      }
+
+      .secondSection .box {
+        height: 1.2px;
+        background: rgb(171, 81, 219);
+        width: 76vw;
+        margin: 114px 14px;
+        display: flex;
+      }
+
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: #8852b9;
+        margin: 0 115px;
+      }
+
+      .image-top {
+        width: 102px;
+        position: relative;
+        top: -63px;
+        left: -51px;
+      }
+
+      .image-top1 {
+        width: 70px;
+        position: relative;
+        top: -69px;
+        left: -34px;
+      }
+
+      .image-top2 {
+        width: 62px;
+        position: relative;
+        top: -63px;
+        left: -28px;
+      }
+
+      .image-top3 {
+        width: 55px;
+        position: relative;
+        top: -61px;
+        left: -25px;
+      }
+      .image-top4 {
+        width: 70px;
+        width: 73px;
+        position: relative;
+        top: -59px;
+        left: -34px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 41px;
+        width: 125px;
+        left: -20px;
+      }
+
+      .vertical-descr {
+        position: relative;
+        top: 60px;
+        color: gray;
+        width: 178px;
+        font-size: 12px;
+        left: -18px;
+      }
+
+      .hr {
+        border: 0;
+        background-color: rgb(171, 81, 219);
+        height: 1.2px;
+      }
+
+      footer {
+        background-color: rgb(17, 30, 74);
+        height: 230px;
+        font-size: large;
+      }
+
+      .footer {
+        display: flex;
+        padding: 35px 21px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul {
+        list-style-type: none;
+      }
+
+      .footer > div {
+        width: 300px;
+      }
+
+      footer .footer-text-center {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+
+      .image-bottom{
+        position: relative;
+        width: 18px;
+        top: 3.17px;
+      }
+      .image-bottom1{
+        position: relative;
+        width: 20px;
+        top: 3.17px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">XYZ's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, my name is <span class="purple">XYZ</span>
+          <div>and I am a passionate</div>
+          <!--<div><span class="purplew">Web developer</span></div> -->
+          <span id="element"></span>
+
+          <div class="buttons">
+            <div>
+              <button class="btn"><a href="/">Download Resume</a></button>
+            </div>
+            <div>
+              <button class="btn"><a href="/">Visit GitHub</a></button>
+            </div>
+            <div>
+              <button class="btn"><a href="/">Hire me! </a></button>
+            </div>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="pngegg.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experiences</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="pic.png" alt="" />
+            <div class="vertical-title">HTML Developer (2012-2015)</div>
+            <div class="vertical-descr">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, aperiam molestias culpa obcaecati iure tempore
+              ducimus iste quas recusandae? Quisquam optio ex cumque?
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top1" src="twitter.png" alt="" />
+            <div class="vertical-title">
+              HTML Developer- Twitter (2015-2016)
+            </div>
+
+            <div class="vertical-descr">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, aperiam molestias culpa obcaecati iure tempore
+              ducimus iste quas recusandae? Quisquam optio ex cumque?
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top2" src="insta.png" alt="" />
+            <div class="vertical-title">
+              HTML Developer- Instagram (2016-2017)
+            </div>
+            <div class="vertical-descr">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, aperiam molestias culpa obcaecati iure tempore
+              ducimus iste quas recusandae? Quisquam optio ex cumque?
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top3" src="fb.png" alt="" />
+            <div class="vertical-title">
+              HTML Developer- Facebook (2017-2019)
+            </div>
+            <div class="vertical-descr">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, aperiam molestias culpa obcaecati iure tempore
+              ducimus iste quas recusandae? Quisquam optio ex cumque?
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top4" src="yt.png" alt="" />
+            <div class="vertical-title">
+              HTML Developer- Youtube (2019-Present)
+            </div>
+            <div class="vertical-descr">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, aperiam molestias culpa obcaecati iure tempore
+              ducimus iste quas recusandae? Quisquam optio ex cumque?
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>XYZ's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li> Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>abc@mail.com</li>
+            <li>xyz@mail.com</li>
+            <li>0131-26537</li>
+            <li>0131-38296</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>  <img class="image-bottom" src="instalogo.png" alt="" /> | xyz_123</li>
+            <li>
+              <li>  <img class="image-bottom1" src="linkedin.png" alt="" /> | xyz1123</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="footer-text-center">
+        Copyright &#169; myportfolio.com | All rights reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web developer.",
+          "Freelancer.",
+          "Coder.",
+          "Graphic designer.",
+          "Video editor.",
+        ],
+        typeSpeed: 90,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
